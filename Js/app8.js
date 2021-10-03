@@ -1,11 +1,15 @@
 let app8input = prompt("enter six-digit number", "");
-let g = parseInt(app8input[0]);
-let h = parseInt(app8input[1]);
-let i = parseInt(app8input[2]);
-let j = parseInt(app8input[3]);
-let k = parseInt(app8input[4]);
-let l = parseInt(app8input[5]);
-if (g === l || h === k || i === j) {
+let firstDigit = parseInt(app8input[0]);
+let secondDigit = parseInt(app8input[1]);
+let thirdDigit = parseInt(app8input[2]);
+let fourthDigit = parseInt(app8input[3]);
+let fifthDigit = parseInt(app8input[4]);
+let sixthDigit = parseInt(app8input[5]);
+if (
+  fifthDigit === sixthDigit ||
+  secondDigit === fifthDigit ||
+  thirdDigit === fourthDigit
+) {
   alert("the number is mirrored");
 } else {
   alert("the number is not mirrored");
